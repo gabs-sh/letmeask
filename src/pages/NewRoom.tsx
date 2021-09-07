@@ -55,4 +55,4 @@ const NewRoom: React.FC = () => {
   );
 };
 
-export default NewRoom;
+export { NewRoom };

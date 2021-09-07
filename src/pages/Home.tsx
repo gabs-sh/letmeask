@@ -35,6 +35,11 @@ const Home: React.FC = () => {
       return;
     }
 
+    if (roomRef.val().endedAt) {
+      alert("Room already closed");
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
   }
 
@@ -69,4 +74,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export { Home };
